@@ -46,7 +46,7 @@ encodeListaConhecida = localizarEncodings(imagens)
 print('Encode realizado')
 
 # Inicializar Web-Cam e coletar cada Frame
-capt = cv2.VideoCapture(0)
+capt = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 while True:
     success, img = capt.read()
